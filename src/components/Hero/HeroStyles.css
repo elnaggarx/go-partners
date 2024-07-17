@@ -1,0 +1,69 @@
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.hero-video{
+    height:100vh !important;
+    width: 100vw !important;
+    object-fit:cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12%;
+    color: white;
+    width: 30vw;
+}
+.hero-text h1{
+    font-size: 80px;
+    font-weight: 1000;
+    line-height: 70px;
+}
+.hero-text p{
+    margin-top: 30px;
+    font-size: 21px;
+    font-family: "Lato", sans-serif;
+    color: #717171;
+}
+.hero button{
+    margin-top: 50px;
+    padding: 5px 3px;
+    font-size: 25px;
+    background-color: #B00000;
+    border: solid 2px #B00000;
+    color: white;
+    font-weight: 700;
+    width: 80%;
+    border-radius: 6px;
+}
+.hero button:hover{
+    background-color: transparent;
+    transition: all ease-in-out 200ms;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px){
+    .hero-text{
+        text-align: center;
+        margin-left: 0;
+        width: 90%;
+    }
+    .hero-text h1{
+        font-size: 50px;
+        
+    }
+    .hero{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero button{
+        width: auto;
+    }
+}

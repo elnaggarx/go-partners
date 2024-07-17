@@ -1,0 +1,29 @@
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    margin-top: 3%;
+}
+.test-text{
+    width:80%;
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+}
+.author{
+    color: #717171;
+}
+@media only screen and (max-width: 768px){
+    .testimonial h1{
+        font-size: 25px;
+    }
+    .test-text{
+        width:90%;
+        font-size: 13px;
+        font-family: "Lato", sans-serif;
+    }
+}
